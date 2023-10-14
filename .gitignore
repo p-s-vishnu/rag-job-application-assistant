@@ -1,0 +1,4 @@
+.env
+*.pdf
+.DS_Store
+*.pyc
