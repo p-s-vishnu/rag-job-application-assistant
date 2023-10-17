@@ -4,7 +4,7 @@ Are you tired of the hassle of writing custom cover letters and answering applic
 
 ![Image Alt Text](demo.gif)
 
-📹 [Link](https://www.youtube.com/watch?v=8tlkPq4ltIQ&list=PLyJxKYYi-T1mpoLltvkDzpaXRtQpEf1zA)
+📹 [Link](https://youtu.be/xm3Xse3HJ40)
 
 ## Features
 
