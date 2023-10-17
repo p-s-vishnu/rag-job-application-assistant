@@ -1,0 +1,13 @@
+version: '3'
+services:
+  job-assistant:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - OPENAI_API_KEY=your_api_key_here
+    volumes:
+      - ./your_project_directory:/app
+    command: gunicorn -b 0.0.0.0:5000 -w 4 your_app_entry_file:app
