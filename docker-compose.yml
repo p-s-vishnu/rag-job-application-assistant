@@ -1,13 +1,18 @@
 version: '3'
 services:
   job-assistant:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "5000:5000"
-    environment:
-      - OPENAI_API_KEY=your_api_key_here
+    image: psvishnu/job-assistant:v1
+    # build:  # Development purpose only
+    #   context: .
+    #   dockerfile: Dockerfile
+    expose: 
+        - "8601"
+    ports: 
+        - "8601:8601"
     volumes:
-      - ./your_project_directory:/app
-    command: gunicorn -b 0.0.0.0:5000 -w 4 your_app_entry_file:app
+      - .:/app
+    env_file:
+      - .env
+    # environment:  Alternative to env_file option
+    #   - OPENAI_API_KEY=your_api_key_here
+    command: streamlit run app.py --server.port 8601 --client.caching True 
