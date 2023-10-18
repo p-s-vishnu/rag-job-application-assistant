@@ -24,8 +24,8 @@ To get started with the RAG Job Application Assistant, follow these simple steps
    ```bash
    OPENAI_API_KEY=<your_api_key_here>
    ```
-
-3. Run the python command on the terminal
+3. Install the packages relevant to the project using `pip install -r requirements.txt`.
+4. Finally, run the python command on the terminal
 
     ```python
     streamlit run app.py
