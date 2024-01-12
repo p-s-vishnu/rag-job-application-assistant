@@ -5,4 +5,4 @@ langchainhub==0.1.13
 python-dotenv==1.0.0
 pdfplumber==0.10.2
 tiktoken==0.5.1
-streamlit==1.27.2
+streamlit==1.30.0
